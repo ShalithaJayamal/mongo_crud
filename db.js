@@ -9,14 +9,8 @@ const state =
 {
     db :null
 };
-const schema = Joi.object().keys({
-    todo : Joi.string().required()
-});
 
 
-
-
-app.use(bodyParser.json());
 const connect = (cd) =>
 {
     if(state.db)
